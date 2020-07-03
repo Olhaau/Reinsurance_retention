@@ -12,5 +12,5 @@
 ## Results of an example
 Shown are the calculated distribution of the sum of claims dependent of the retention and the change in the expected and probable sum of claims in an realistic example.
 
-<img align="left" width="430" height="400" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/SumOfClaims.gif">
-<img align="left" width="430" height="385" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/EstimatedSafetyCapital.png">
+<img align="left" width="400" height="400" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/SumOfClaims.gif">
+<img align="left" width="400" height="385" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/EstimatedSafetyCapital.png">
