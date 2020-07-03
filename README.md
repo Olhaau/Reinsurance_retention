@@ -5,8 +5,7 @@
 * calculates from a claim size distribution in Excel a adjusted claim size distribution under a fixed retention and uses the Panjer recursion to calculate the distribution of the sum of claims of a entire asset.
 
 ## Code
-**Python Version**: 3.8
-
+**Python Version**: 3.8\
 **Packages**: pandas, numpy, matplotlib, seaborn, os
 
 ## Results of an example
