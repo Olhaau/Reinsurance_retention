@@ -9,7 +9,7 @@
 **Packages**: pandas, numpy, matplotlib, seaborn, os
 
 ## Results of an example
-Shown are the calculated distribution of the sum of claims dependent of the retention and the change in the expected and probable sum of claims in an realistic example.
+Shown are the calculated distribution of the sum of claims for various retentions and the change in the expected and probable sum of claims in an realistic (synthetic) example.
 
 <img align="left" width="380" height="400" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/SumOfClaims.gif">
 <img align="left" width="380" height="385" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/EstimatedSafetyCapital.png">
