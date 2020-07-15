@@ -27,7 +27,7 @@ For random variables
 (number of claims)
 with given distributions we want to calculate the distribution of
 <img src="https://render.githubusercontent.com/render/math?math=\sum_{i = 1}^N X_i">
-(total sum of claims)
+(total sum of claims).
 
 
 ### Assumptions
