@@ -1,4 +1,4 @@
-# Reinsurance_Retention
+# Risk of reinsurance retention changes
 
 ## Project Overview
 * Created a tool for insurance companies, which makes savings in reinsurance premium possible by controlling the risk of a change of their reinsurance retentions.
