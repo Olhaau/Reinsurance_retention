@@ -30,9 +30,13 @@ with given distributions we want to calculate the distribution of
 (total sum of claims).
 
 
+
+<!--
+TODO:
 ### Assumptions
 ...
 
-
 ## Resources
 ...
+-->
+
