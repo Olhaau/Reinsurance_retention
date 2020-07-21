@@ -17,7 +17,7 @@ Shown are the calculated distribution of the sum of claims for various retention
 **Python Version**: 3.8\
 **Packages**: pandas, numpy, matplotlib, seaborn, os
 
-### Under construction
+### -- Under construction --
 
 ## Mathematical details
 For random variables 
