@@ -21,21 +21,23 @@ Shown are the calculated distribution of the sum of claims for various retention
 
 ## Mathematical details
 For random variables 
-<img src="https://render.githubusercontent.com/render/math?math=X_1, X_2, ...">
-(claim sizes) and
-<img src="https://render.githubusercontent.com/render/math?math=N">
+<img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="X_1, X_2, ..." />
+(claim sizes) and a 
+<img src="https://latex.codecogs.com/gif.latex?\mathbb{N}_0" title="\mathbb{N}_0" />-valued random variable
+<img src="https://latex.codecogs.com/gif.latex?N" title="N" />
 (number of claims)
 with known distributions we want to calculate the distribution of
-<img src="https://render.githubusercontent.com/render/math?math=S = \sum_{i = 1}^N X_i">
+<img src="https://latex.codecogs.com/gif.latex?S&space;=&space;\sum_{i&space;=&space;1}^{N}&space;X_i" title="S = \sum_{i = 1}^{N} X_i" />
 (total sum of claims). This can be done by Panjer's Algorithm, if we assume the following preconditions.
 
-1. <img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="N, X_1, X_2, ..." /> are independent
-2. <img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="X_1, X_2, ..." /> are identically distributed on a lattice <img src="https://latex.codecogs.com/gif.latex?h\mathbb{N}_{0}^{}" title="h\mathbb{N}_{0}^{}" />
+1. <img src="https://latex.codecogs.com/gif.latex?N,&space;X_1,&space;X_2,&space;..." title="N, X_1, X_2, ..." /> are independent
+2. <img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="X_1, X_2, ..." /> are identically distributed on a lattice <img src="https://latex.codecogs.com/gif.latex?h\mathbb{N}_{0}^{}" title="h\mathbb{N}_{0}^{}" /> with latticewidth <img src="https://latex.codecogs.com/gif.latex?h>0" title="h>0" />
 
 
 
 ## Resources
-[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf)
+[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf),
+[wiki](https://en.wikipedia.org/wiki/Panjer_recursion)
 
 <!--
 TODO:
