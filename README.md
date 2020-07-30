@@ -13,22 +13,29 @@ Shown are the calculated distribution of the sum of claims for various retention
 <img style="float: right;" width="380" height="385" src="https://raw.githubusercontent.com/Olhaau/Reinsurance_retention/master/EstimatedSafetyCapital.png">
 
 
+
+
 ## Code
 **Python Version**: 3.8\
 **Packages**: pandas, numpy, matplotlib, seaborn, os
 
-
 ## Mathematical details
 For random variables 
-<img src="https://render.githubusercontent.com/render/math?math=X_1, X_2,...">
+<img src="https://render.githubusercontent.com/render/math?math=X_1, X_2, ...">
 (claim sizes) and
 <img src="https://render.githubusercontent.com/render/math?math=N">
 (number of claims)
-with given distributions we want to calculate the distribution of
-<img src="https://render.githubusercontent.com/render/math?math=\sum_{i = 1}^N X_i">
-(total sum of claims).
+with known distributions we want to calculate the distribution of
+<img src="https://render.githubusercontent.com/render/math?math=S = \sum_{i = 1}^N X_i">
+(total sum of claims). This can be done by Panjer's Algorithm, if we assume the following preconditions.
+
+1. <img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="N, X_1, X_2, ..." /> are independent
+2. <img src="https://latex.codecogs.com/gif.latex?X_1,&space;X_2,&space;..." title="X_1, X_2, ..." /> are identically distributed on a lattice <img src="https://latex.codecogs.com/gif.latex?h\mathbb{N}_{0}^{}" title="h\mathbb{N}_{0}^{}" />
 
 
+
+## Resources
+[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf)
 
 <!--
 TODO:
@@ -36,7 +43,6 @@ TODO:
 ### Assumptions
 ...
 
-## Resources
 ...
 -->
 
