@@ -4,7 +4,7 @@
 * Created a tool for insurance companies, which makes savings in reinsurance premium possible by controlling the risk of a change in their reinsurance retentions.
 * Calculates from a claim size distribution in an Excel format an adjusted claim size distribution under a fixed retention and uses the Panjer recursion to calculate the distribution of the sum of claims of an entire asset.
 * Uses the results to estimate the risk of a retention change by calculating the expected sum of claims, the capital for a specified safety, the deviation and more.
-* Project of an internship at a major insurance company in 2013, which indeed saved reinsurance premium by the calculations.
+* Project of an internship at a major insurance company in 2013 that indeed made savings in reinsurance premium possible
 
 
 ## Results of an example
