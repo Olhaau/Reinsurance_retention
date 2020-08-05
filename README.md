@@ -34,19 +34,26 @@ with known distributions we want to calculate the distribution of
 and <img src="https://latex.codecogs.com/gif.latex?f_k&space;=&space;P(X_i&space;=&space;hk)" title="f_k = P(X_i = hk))" /> for each <img src="https://latex.codecogs.com/gif.latex?i,&space;k&space;\in&space;\mathbb{N}_0" title="k \in \mathbb{N}_0" />. In actuarial practice <img src="https://latex.codecogs.com/gif.latex?X_i" title="X_i" /> is obtained by discretisation of the claim density function.
 3. <img src="https://latex.codecogs.com/gif.latex?N" title="N" /> is Poisson, binomial or negativ binomial distributed
 
-Setting <img src="https://latex.codecogs.com/gif.latex?P(N&space;=&space;k)&space;=&space;p_k" title="P(N = k) = p_k" />, it follows that <img src="https://latex.codecogs.com/gif.latex?a,&space;b" title="a, b" /> exists with <img src="https://latex.codecogs.com/gif.latex?a+b\geq&space;0" title="a, b" /> and <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;(a&space;&plus;\tfrac{b}{k})\cdot&space;p_{k-1}" title="p_k = (a +\tfrac{b}{k})\cdot p_{k-1}" /> for <img src="https://latex.codecogs.com/gif.latex?k\geq&space;1" title="g_0 = p_0\cdot \exp(f_0 b)" />.   
-
-Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title="N" /> can be calculated by Panjer's algorithm. Setting <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;P(S=hk)" title="g_k = P(S=hk)" /> we have  
+Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title="N" /> can be calculated by Panjer's algorithm. Setting <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;P(N&space;=&space;k)" title="P(N = k) = p_k" />  and <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;P(S=hk)" title="g_k = P(S=hk)" /> we have  
   
-   <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;p_0\cdot&space;\exp(f_0&space;b)" title="g_0 = p_0\cdot \exp(f_0 b)" /> if <img src="https://latex.codecogs.com/gif.latex?a=0" title="g_k = P(S=hk)" /> 
+   <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;p_0\cdot&space;\exp(f_0&space;b)" title="g_0 = p_0\cdot \exp(f_0 b)" /> if <img src="https://latex.codecogs.com/gif.latex?N" title="g_k = P(S=hk)" /> is Poisson distributed
    and  else  
    <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;\tfrac{p_0}{(1-f_0a)^{1+b/a}}" title="g_0 = p_0\cdot \exp(f_0 b)" />  
    and proceed with  
-<img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;\tfrac{1}{1-f_0a}\sum_{j=1}^k(a&plus;\tfrac{b\cdot&space;j}{k})\cdot&space;f_j&space;\cdot&space;g_{k-j}" title="g_k = \tfrac{1}{1-f_0a}\sum_{j=1}^k(a+\tfrac{b\cdot j}{k})\cdot f_j \cdot g_{k-j}" />
+<img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;\tfrac{1}{1-f_0a}\sum_{j=1}^k(a&plus;\tfrac{b\cdot&space;j}{k})\cdot&space;f_j&space;\cdot&space;g_{k-j}" title="g_k = \tfrac{1}{1-f_0a}\sum_{j=1}^k(a+\tfrac{b\cdot j}{k})\cdot f_j \cdot g_{k-j}" />  
+
+with
+
+| Distribution      | Binomial         | Negativ binomial  | Poisson           |   
+| :-----------------: |:----------------:| :-----------------:| :-----------------: |
+| Parameters        | ![im](https://latex.codecogs.com/gif.latex?n\in\mathbb{N}), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))   | ![im](https://latex.codecogs.com/gif.latex?r\in(0,\infty)), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))            | ![im](https://latex.codecogs.com/gif.latex?\lambda\in(0,\infty))              |
+| ![im](https://latex.codecogs.com/gif.latex?a)      | ![im](https://latex.codecogs.com/gif.latex?-p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?1-p)            | ![im](https://latex.codecogs.com/gif.latex?0)               |
+| ![im](https://latex.codecogs.com/gif.latex?b)      | ![im](https://latex.codecogs.com/gif.latex?(n+1)p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?(r-1)(1-p))            | ![im](https://latex.codecogs.com/gif.latex?\lambda)              |
+
 
 
 ## Resources
-[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf)  
+[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf)
 [wiki](https://en.wikipedia.org/wiki/Panjer_recursion)
 
 <!--
@@ -54,7 +61,9 @@ TODO:
 ### -- Under construction --
 ### Assumptions
 ...
+h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
+, it follows that <img src="https://latex.codecogs.com/gif.latex?a,&space;b" title="a, b" /> exists with <img src="https://latex.codecogs.com/gif.latex?a+b\geq&space;0" title="a, b" /> and <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;(a&space;&plus;\tfrac{b}{k})\cdot&space;p_{k-1}" title="p_k = (a +\tfrac{b}{k})\cdot p_{k-1}" /> for <img src="https://latex.codecogs.com/gif.latex?k\geq&space;1" title="g_0 = p_0\cdot \exp(f_0 b)" />.  
 ...
 -->
 
