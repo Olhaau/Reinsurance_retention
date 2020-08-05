@@ -34,7 +34,7 @@ with known distributions we want to calculate the distribution of
 and <img src="https://latex.codecogs.com/gif.latex?f_k&space;=&space;P(X_i&space;=&space;hk)" title="f_k = P(X_i = hk))" /> for each <img src="https://latex.codecogs.com/gif.latex?i,&space;k&space;\in&space;\mathbb{N}_0" title="k \in \mathbb{N}_0" />. In actuarial practice <img src="https://latex.codecogs.com/gif.latex?X_i" title="X_i" /> is obtained by discretisation of the claim density function.
 3. <img src="https://latex.codecogs.com/gif.latex?N" title="N" /> is Poisson, binomial or negativ binomial distributed
 
-Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title="N" /> can be calculated by Panjer's algorithm. Setting <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;P(N&space;=&space;k)" title="P(N = k) = p_k" />  and <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;P(S=hk)" title="g_k = P(S=hk)" /> we have  
+Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title="N" /> can be calculated by Panjer's algorithm. Setting <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;P(N&space;=&space;k)" title="P(N = k) = p_k" />  and <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;P(S=hk)" title="g_k = P(S=hk)" />, we have  
   
    
 <p align=center><img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;p_0\cdot&space;\exp(f_0&space;b)" title="g_0 = p_0\cdot \exp(f_0 b)" /> </p>
