@@ -55,7 +55,7 @@ where ![im](https://latex.codecogs.com/gif.latex?a) and ![im](https://latex.code
 
 
 ## Resources
-[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf), 
+[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf), see also
 [wiki](https://en.wikipedia.org/wiki/Panjer_recursion)
 
 <!--
