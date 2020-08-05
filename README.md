@@ -37,14 +37,13 @@ and <img src="https://latex.codecogs.com/gif.latex?f_k&space;=&space;P(X_i&space
 Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title="N" /> can be calculated by Panjer's algorithm. Setting <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;P(N&space;=&space;k)" title="P(N = k) = p_k" />  and <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;P(S=hk)" title="g_k = P(S=hk)" /> we have  
   
    <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;p_0\cdot&space;\exp(f_0&space;b)" title="g_0 = p_0\cdot \exp(f_0 b)" /> if <img src="https://latex.codecogs.com/gif.latex?N" title="g_k = P(S=hk)" /> is Poisson distributed
-   and  else  
-   <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;\tfrac{p_0}{(1-f_0a)^{1+b/a}}" title="g_0 = p_0\cdot \exp(f_0 b)" />  
+   and  else <img src="https://latex.codecogs.com/gif.latex?g_0&space;=&space;\tfrac{p_0}{(1-f_0a)^{1+b/a}}" title="g_0 = p_0\cdot \exp(f_0 b)" />  
    and proceed with  
 <img src="https://latex.codecogs.com/gif.latex?g_k&space;=&space;\tfrac{1}{1-f_0a}\sum_{j=1}^k(a&plus;\tfrac{b\cdot&space;j}{k})\cdot&space;f_j&space;\cdot&space;g_{k-j}" title="g_k = \tfrac{1}{1-f_0a}\sum_{j=1}^k(a+\tfrac{b\cdot j}{k})\cdot f_j \cdot g_{k-j}" />  
 
-with
+where ![im](https://latex.codecogs.com/gif.latex?a) and ![im](https://latex.codecogs.com/gif.latex?b) can be calculated by
 
-| Distribution      | Binomial         | Negativ binomial  | Poisson           |   
+| Distribution of ![im](https://latex.codecogs.com/gif.latex?N)   | Binomial         | Negativ binomial  | Poisson           |   
 | :-----------------: |:----------------:| :-----------------:| :-----------------: |
 | Parameters        | ![im](https://latex.codecogs.com/gif.latex?n\in\mathbb{N}), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))   | ![im](https://latex.codecogs.com/gif.latex?r\in(0,\infty)), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))            | ![im](https://latex.codecogs.com/gif.latex?\lambda\in(0,\infty))              |
 | ![im](https://latex.codecogs.com/gif.latex?a)      | ![im](https://latex.codecogs.com/gif.latex?-p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?1-p)            | ![im](https://latex.codecogs.com/gif.latex?0)               |
