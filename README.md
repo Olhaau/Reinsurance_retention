@@ -43,16 +43,19 @@ Then the distribution of <img src="https://latex.codecogs.com/gif.latex?S" title
 
 where ![im](https://latex.codecogs.com/gif.latex?a) and ![im](https://latex.codecogs.com/gif.latex?b) can be calculated by
 
-| Distribution of ![im](https://latex.codecogs.com/gif.latex?N)   | Binomial         | Negativ binomial  | Poisson           |   
-| :-----------------: |:----------------:| :-----------------:| :-----------------: |
-| Parameters        | ![im](https://latex.codecogs.com/gif.latex?n\in\mathbb{N}), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))   | ![im](https://latex.codecogs.com/gif.latex?r\in(0,\infty)), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))            | ![im](https://latex.codecogs.com/gif.latex?\lambda\in(0,\infty))              |
-| ![im](https://latex.codecogs.com/gif.latex?a)      | ![im](https://latex.codecogs.com/gif.latex?-p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?1-p)            | ![im](https://latex.codecogs.com/gif.latex?0)               |
-| ![im](https://latex.codecogs.com/gif.latex?b)      | ![im](https://latex.codecogs.com/gif.latex?(n+1)p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?(r-1)(1-p))            | ![im](https://latex.codecogs.com/gif.latex?\lambda)              |
+
+| Distribution of ![im](https://latex.codecogs.com/gif.latex?N) | Parameters  | ![im](https://latex.codecogs.com/gif.latex?a) | ![im](https://latex.codecogs.com/gif.latex?b) 
+| :------------------ | :-----------------: | :-----------------: | :-----------------: |
+| Binomial            |  ![im](https://latex.codecogs.com/gif.latex?n\in\mathbb{N}), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))                   |                      ![im](https://latex.codecogs.com/gif.latex?-p/(1-p))      |  ![im](https://latex.codecogs.com/gif.latex?(n+1)p/(1-p))            |
+| Negative binomial   | ![im](https://latex.codecogs.com/gif.latex?r\in(0,\infty)), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))                    |                      ![im](https://latex.codecogs.com/gif.latex?1-p)  |  ![im](https://latex.codecogs.com/gif.latex?(r-1)(1-p))                |
+| Poisson             | ![im](https://latex.codecogs.com/gif.latex?\lambda\in(0,\infty))                    | ![im](https://latex.codecogs.com/gif.latex?0)                     | ![im](https://latex.codecogs.com/gif.latex?\lambda)                    |
+
+
 
 
 
 ## Resources
-[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf)
+[Panjer's paper on the algorithm](https://www.casact.org/library/astin/vol12no1/22.pdf), 
 [wiki](https://en.wikipedia.org/wiki/Panjer_recursion)
 
 <!--
@@ -63,6 +66,14 @@ TODO:
 h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
 , it follows that <img src="https://latex.codecogs.com/gif.latex?a,&space;b" title="a, b" /> exists with <img src="https://latex.codecogs.com/gif.latex?a+b\geq&space;0" title="a, b" /> and <img src="https://latex.codecogs.com/gif.latex?p_k&space;=&space;(a&space;&plus;\tfrac{b}{k})\cdot&space;p_{k-1}" title="p_k = (a +\tfrac{b}{k})\cdot p_{k-1}" /> for <img src="https://latex.codecogs.com/gif.latex?k\geq&space;1" title="g_0 = p_0\cdot \exp(f_0 b)" />.  
+
+
+| Distribution of ![im](https://latex.codecogs.com/gif.latex?N)   | Binomial         | Negativ binomial  | Poisson           |   
+| :-----------------: | :-----------------: | :-----------------: | :-----------------: |
+| Parameters        | ![im](https://latex.codecogs.com/gif.latex?n\in\mathbb{N}), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))   | ![im](https://latex.codecogs.com/gif.latex?r\in(0,\infty)), ![im](https://latex.codecogs.com/gif.latex?p\in(0,1))            | ![im](https://latex.codecogs.com/gif.latex?\lambda\in(0,\infty))              |
+| ![im](https://latex.codecogs.com/gif.latex?a)      | ![im](https://latex.codecogs.com/gif.latex?-p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?1-p)            | ![im](https://latex.codecogs.com/gif.latex?0)               |
+| ![im](https://latex.codecogs.com/gif.latex?b)      | ![im](https://latex.codecogs.com/gif.latex?(n+1)p/(1-p))  | ![im](https://latex.codecogs.com/gif.latex?(r-1)(1-p))            | ![im](https://latex.codecogs.com/gif.latex?\lambda)              |
+
 ...
 -->
 
